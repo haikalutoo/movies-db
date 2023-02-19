@@ -13,8 +13,8 @@ document.addEventListener("click", async function (e) {
     updeteUIDetail(movieDetail);
   }
 });
-// myFunct
 
+// myFunct
 function getMovieDetail(imdbid) {
   return fetch(`http://www.omdbapi.com/?apikey=a8b3cdf1&i=${imdbid}`)
     .then((response) => response.json())
